@@ -1,0 +1,117 @@
+{
+  "@context" : {
+    "Pedro_Ximenez" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Pedro_Ximenez"
+    },
+    "Fortified_wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Fortified_wine"
+    },
+    "Winery" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery"
+    },
+    "Sauvignon" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sauvignon"
+    },
+    "body" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Strong_wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Strong_wine"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "Ribera_del_Duero" : {
+      "@id" : "https://dbpedia.org/page/Ribera_del_Duero"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Red_Wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"
+    },
+    "Rioja_White" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_White"
+    },
+    "Aged_wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Aged_wine"
+    },
+    "hasWineRegion" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#hasWineRegion",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Rose_wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rose_wine"
+    },
+    "Sherry" : {
+      "@id" : "https://dbpedia.org/page/Sherry"
+    },
+    "Grenache" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Grenache"
+    },
+    "Sparkling_wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sparkling_wine"
+    },
+    "Rioja_Red" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_Red"
+    },
+    "White_Wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine"
+    },
+    "year" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Toro_Red" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Toro_Red"
+    },
+    "Sweet_wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sweet_wine"
+    },
+    "High_quality_wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#High_quality_wine"
+    },
+    "Verdejo" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Verdejo"
+    },
+    "Cabernet" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Cabernet"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Wine_region" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region"
+    },
+    "isProducedBy" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#isProducedBy",
+      "@type" : "@id"
+    },
+    "rating" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Cava" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Cava"
+    },
+    "Chardonnay" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Chardonnay"
+    },
+    "Albarino" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Albarino"
+    },
+    "Wine" : {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; ":Sherry" "Spaniard_Wines:Sweet_wine" "Spaniard_Wines:Rioja_White" "Spaniard_Wines:Strong_wine" "Spaniard_Wines:Fortified_wine" "Spaniard_Wines:Cabernet" "Spaniard_Wines:Pedro_Ximenez" "Spaniard_Wines:White_Wine" "Spaniard_Wines:Chardonnay" "Spaniard_Wines:Red_Wine" "Spaniard_Wines:Cava" "Spaniard_Wines:Grenache" "Spaniard_Wines:High_quality_wine" "Spaniard_Wines:Rioja_Red" "Spaniard_Wines:Sparkling_wine" ":Ribera_del_Duero" "Spaniard_Wines:Aged_wine" "Spaniard_Wines:Verdejo" "Spaniard_Wines:Rose_wine" "Spaniard_Wines:Sauvignon" "Spaniard_Wines:Toro_Red" "Spaniard_Wines:Albarino" "Spaniard_Wines:Wine" ; /*classes style*/
+	"Spaniard_Wines:High_quality_wine" -> "Spaniard_Wines:Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Sweet_wine" -> "Spaniard_Wines:Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Cava" -> "Spaniard_Wines:Sparkling_wine" [ label = "rdfs:subClassOf" ];
+	":Ribera_del_Duero" -> "Spaniard_Wines:Red_Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Chardonnay" -> "Spaniard_Wines:White_Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Albarino" -> "Spaniard_Wines:White_Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Sparkling_wine" -> "Spaniard_Wines:Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:White_Wine" -> "Spaniard_Wines:Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Sauvignon" -> "Spaniard_Wines:Red_Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Fortified_wine" -> "Spaniard_Wines:Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Red_Wine" -> "Spaniard_Wines:Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Verdejo" -> "Spaniard_Wines:White_Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Aged_wine" -> "Spaniard_Wines:Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Cabernet" -> "Spaniard_Wines:Red_Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Grenache" -> "Spaniard_Wines:Rose_wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Rose_wine" -> "Spaniard_Wines:Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Toro_Red" -> "Spaniard_Wines:Red_Wine" [ label = "rdfs:subClassOf" ];
+	":Sherry" -> "Spaniard_Wines:Fortified_wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Rioja_Red" -> "Spaniard_Wines:Red_Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Pedro_Ximenez" -> "Spaniard_Wines:Sweet_wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Rioja_White" -> "Spaniard_Wines:White_Wine" [ label = "rdfs:subClassOf" ];
+	"Spaniard_Wines:Strong_wine" -> "Spaniard_Wines:Wine" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,746 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#"
+     xml:base="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Spaniard_Wines="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines">
+        <rdfs:label>Spaniard Wines</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <dc:creator>Ignacio Azpíroz del Cuvillo</dc:creator>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#hasWineRegion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#hasWineRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region"/>
+        <rdfs:comment>The property that relates the wine with the region where is produced</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#isProducedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#isProducedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery"/>
+        <rdfs:comment>The property that relates the wine with the campany that produces the wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Intensity en de flavour</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Score that the community give to wine</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>when the wine were produced</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Aged_wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Aged_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:comment>Wine that is since a date before 2000</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Albarino -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Albarino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine"/>
+        <rdfs:comment>A type of white wine called Albarino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Cabernet -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Cabernet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"/>
+        <rdfs:comment>A type of red wine called Cabernet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Cava -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Cava">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sparkling_wine"/>
+        <rdfs:comment>A type of sparkling wine called cava</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Chardonnay -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Chardonnay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine"/>
+        <rdfs:comment>A type of white wine called Chardonnay</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Fortified_wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Fortified_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:comment>Type of wine that is called fortified wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Grenache -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Grenache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rose_wine"/>
+        <rdfs:comment>A type of rose wine called Grenache</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#High_quality_wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#High_quality_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:comment>Wines with a rating equals or greater than 45</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Pedro_Ximenez -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Pedro_Ximenez">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sweet_wine"/>
+        <rdfs:comment>A type of sweet wine called Pedro Ximenez</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:comment>Type of wine that is called red wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_Red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"/>
+        <rdfs:comment>A type of red wine called Rioja red</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_White -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_White">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine"/>
+        <rdfs:comment>A type of white wine called Rioja white</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rose_wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rose_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:comment>Type of wine that is called rose wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sauvignon -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sauvignon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"/>
+        <rdfs:comment>A type of red wine called Sauvignon</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sparkling_wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sparkling_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:comment>Type of wine that is called sparkling wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Strong_wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Strong_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:comment>Wines with a body greater or equals to 4</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sweet_wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sweet_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:comment>Type of wine that is called sweet wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Toro_Red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Toro_Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"/>
+        <rdfs:comment>A type of red wine called Toro red</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Verdejo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Verdejo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine"/>
+        <rdfs:comment>A type of white wine called Verdejo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+        <rdfs:comment>Type of wine that is called white wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region">
+        <rdfs:comment>The place where the wine is produced that is a region, for example a province or a state</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery">
+        <rdfs:comment>The company that produce the wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://dbpedia.org/page/Ribera_del_Duero -->
+
+
+    <owl:Class rdf:about="https://dbpedia.org/page/Ribera_del_Duero">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"/>
+        <rdfs:comment>A type of red wine called Ribera del Duero</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://dbpedia.org/page/Sherry -->
+
+
+    <owl:Class rdf:about="https://dbpedia.org/page/Sherry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Fortified_wine"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Anada_Palo_Cortado_1987 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Anada_Palo_Cortado_1987">
+        <rdf:type rdf:resource="https://dbpedia.org/page/Sherry"/>
+        <hasWineRegion rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Jerez_Palo_Cortado"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Gonzalez-Byass"/>
+        <body rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</body>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</rating>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1987</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Bodega_Contador -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Bodega_Contador">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Gonzalez-Byass -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Gonzalez-Byass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Jerez_Palo_Cortado -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Jerez_Palo_Cortado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#La_Cueva_del_Contador_Rioja -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#La_Cueva_del_Contador_Rioja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_Red"/>
+        <hasWineRegion rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Bodega_Contador"/>
+        <body rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</body>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</rating>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Que_Bonito_Cacareaba_Blanco -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Que_Bonito_Cacareaba_Blanco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_White"/>
+        <hasWineRegion rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Bodega_Contador"/>
+        <body rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</body>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</rating>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>QualityRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/r"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/r"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#High_quality_wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>AgeRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/y"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Aged_wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>BodyRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/b"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Strong_wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
