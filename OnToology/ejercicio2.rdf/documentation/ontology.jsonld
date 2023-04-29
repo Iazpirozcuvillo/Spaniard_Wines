@@ -1,0 +1,670 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Strong_wine"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "QualityRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid19"
+    }, {
+      "@id" : "_:genid17"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/r"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "45"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#High_quality_wine"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AgeRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    }, {
+      "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid28"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid36"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/y"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "2000"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Aged_wine"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BodyRule"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    }, {
+      "@id" : "_:genid8"
+    }, {
+      "@id" : "_:genid6"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid14"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/b"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/b"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Ignacio Azpíroz del Cuvillo"
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Spaniard Wines"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Aged_wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine that is since a date before 2000"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Albarino",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of white wine called Albarino"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Anada_Palo_Cortado_1987",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#hasWineRegion" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Jerez_Palo_Cortado"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Gonzalez-Byass"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "47"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1987"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://dbpedia.org/page/Sherry"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Bodega_Contador",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Cabernet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of red wine called Cabernet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Cava",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of sparkling wine called cava"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sparkling_wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Chardonnay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of white wine called Chardonnay"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Fortified_wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of wine that is called fortified wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Gonzalez-Byass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Grenache",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of rose wine called Grenache"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rose_wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#High_quality_wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wines with a rating equals or greater than 45"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Jerez_Palo_Cortado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#La_Cueva_del_Contador_Rioja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#hasWineRegion" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Bodega_Contador"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "45"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2017"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_Red"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Pedro_Ximenez",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of sweet wine called Pedro Ximenez"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sweet_wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Que_Bonito_Cacareaba_Blanco",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#hasWineRegion" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Bodega_Contador"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "45"
+  } ],
+  "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2018"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_White"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of wine that is called red wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_Red",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of red wine called Rioja red"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rioja_White",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of white wine called Rioja white"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Rose_wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of wine that is called rose wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sauvignon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of red wine called Sauvignon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sparkling_wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of wine that is called sparkling wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Strong_wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wines with a body greater or equals to 4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Sweet_wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of wine that is called sweet wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Toro_Red",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of red wine called Toro red"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Verdejo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of white wine called Verdejo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#White_Wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of wine that is called white wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Wine"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The place where the wine is produced that is a region, for example a province or a state"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The company that produce the wine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#body",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Intensity en de flavour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#hasWineRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The property that relates the wine with the region where is produced"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine_region"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#isProducedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The property that relates the wine with the campany that produces the wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Winery"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Score that the community give to wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "when the wine were produced"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/b",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/w",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/untitled-ontology-8/y",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Wine"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "https://dbpedia.org/page/Ribera_del_Duero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A type of red wine called Ribera del Duero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Red_Wine"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Sherry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ignac/ontologies/2023/3/Spaniard_Wines#Fortified_wine"
+  } ]
+} ]
